@@ -23,6 +23,8 @@
 		E66D55B61830DBF70006CCC8 /* MOBAdvancedDynamicsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D55B51830DBF70006CCC8 /* MOBAdvancedDynamicsDemoTests.m */; };
 		E66D55C11830DE720006CCC8 /* MOBBouncyExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D55C01830DE720006CCC8 /* MOBBouncyExpandViewController.m */; };
 		E66D55CB1830F0450006CCC8 /* MOBFallingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D55CA1830F0450006CCC8 /* MOBFallingItem.m */; };
+		E67F200E183CDCC100DE729C /* MOBCustomBehaviourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67F200D183CDCC100DE729C /* MOBCustomBehaviourViewController.m */; };
+		E67F2013183CDD1500DE729C /* MOBGravityCollisionBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = E67F2012183CDD1500DE729C /* MOBGravityCollisionBehaviour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		E66D55C01830DE720006CCC8 /* MOBBouncyExpandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBBouncyExpandViewController.m; sourceTree = "<group>"; };
 		E66D55C91830F0450006CCC8 /* MOBFallingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOBFallingItem.h; path = Behaviours/MOBFallingItem.h; sourceTree = "<group>"; };
 		E66D55CA1830F0450006CCC8 /* MOBFallingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOBFallingItem.m; path = Behaviours/MOBFallingItem.m; sourceTree = "<group>"; };
+		E67F200C183CDCC100DE729C /* MOBCustomBehaviourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBCustomBehaviourViewController.h; sourceTree = "<group>"; };
+		E67F200D183CDCC100DE729C /* MOBCustomBehaviourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBCustomBehaviourViewController.m; sourceTree = "<group>"; };
+		E67F2011183CDD1500DE729C /* MOBGravityCollisionBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBGravityCollisionBehaviour.h; sourceTree = "<group>"; };
+		E67F2012183CDD1500DE729C /* MOBGravityCollisionBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBGravityCollisionBehaviour.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 		E66D558D1830DBF70006CCC8 /* MOBAdvancedDynamicsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E67F2010183CDCEF00DE729C /* Behaviours */,
+				E67F200F183CDCDD00DE729C /* DynamicItems */,
 				E66D55961830DBF70006CCC8 /* MOBAppDelegate.h */,
 				E66D55971830DBF70006CCC8 /* MOBAppDelegate.m */,
 				E66D55991830DBF70006CCC8 /* Main_iPhone.storyboard */,
@@ -127,8 +135,8 @@
 				E66D558E1830DBF70006CCC8 /* Supporting Files */,
 				E66D55BF1830DE720006CCC8 /* MOBBouncyExpandViewController.h */,
 				E66D55C01830DE720006CCC8 /* MOBBouncyExpandViewController.m */,
-				E66D55C91830F0450006CCC8 /* MOBFallingItem.h */,
-				E66D55CA1830F0450006CCC8 /* MOBFallingItem.m */,
+				E67F200C183CDCC100DE729C /* MOBCustomBehaviourViewController.h */,
+				E67F200D183CDCC100DE729C /* MOBCustomBehaviourViewController.m */,
 			);
 			path = MOBAdvancedDynamicsDemo;
 			sourceTree = "<group>";
@@ -160,6 +168,24 @@
 				E66D55B21830DBF70006CCC8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E67F200F183CDCDD00DE729C /* DynamicItems */ = {
+			isa = PBXGroup;
+			children = (
+				E66D55C91830F0450006CCC8 /* MOBFallingItem.h */,
+				E66D55CA1830F0450006CCC8 /* MOBFallingItem.m */,
+			);
+			name = DynamicItems;
+			sourceTree = "<group>";
+		};
+		E67F2010183CDCEF00DE729C /* Behaviours */ = {
+			isa = PBXGroup;
+			children = (
+				E67F2011183CDD1500DE729C /* MOBGravityCollisionBehaviour.h */,
+				E67F2012183CDD1500DE729C /* MOBGravityCollisionBehaviour.m */,
+			);
+			name = Behaviours;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +288,9 @@
 			files = (
 				E66D55941830DBF70006CCC8 /* main.m in Sources */,
 				E66D55A11830DBF70006CCC8 /* MOBViewController.m in Sources */,
+				E67F200E183CDCC100DE729C /* MOBCustomBehaviourViewController.m in Sources */,
 				E66D55981830DBF70006CCC8 /* MOBAppDelegate.m in Sources */,
+				E67F2013183CDD1500DE729C /* MOBGravityCollisionBehaviour.m in Sources */,
 				E66D55CB1830F0450006CCC8 /* MOBFallingItem.m in Sources */,
 				E66D55C11830DE720006CCC8 /* MOBBouncyExpandViewController.m in Sources */,
 			);
